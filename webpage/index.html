@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>LivataIoT</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'>
+		<link rel="stylesheet" type="text/css" href="css/slicknav.css">
+		<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">	
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-toggle.css">
+		
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
+		<script type="text/javascript" src="js/camera.min.js"></script>
+		<script type="text/javascript" src="js/myscript.js"></script>
+		<script src="js/sorting.js" type="text/javascript"></script>
+		<script src="js/jquery.isotope.js" type="text/javascript"></script>
+		<script src="js/bootstrap-toggle.js" type="text/javascript"></script>
+		<!--script type="text/javascript" src="js/jquery.nav.js"></script-->
+		
+		<script>
+			jQuery(function(){
+				jQuery('#camera_wrap_1').camera({
+					transPeriod: 500,
+					time: 3000,
+					height: '490px',
+					thumbnails: false,
+					pagination: true,
+					playPause: false,
+					loader: false,
+					navigation: false,
+					hover: false
+				});
+			});
+		</script>
+	</head>
+	<body>
+	    <!--Home start-->
+	    <div id="home">
+	    	<div class="headerLine">
+		<div id="menuF" class="default">
+			<div class="container">
+				<div class="row">
+					<div class="logo col-md-4">
+						<div>
+							<a href="#">
+								<img src="images/logo.png">
+							</a>
+						</div>
+					</div>
+					<div class="col-md-8">
+						<div class="navmenu"style="text-align: center;">
+							<ul id="menu">
+								<li class="active" ><a href="#home">Home</a></li>
+								<li><a href="#domotica">Domotica</a></li>
+								<li><a href="#foto">Foto</a></li>
+								<li><a href="#film">Film</a></li>
+								<!--li><a href="#features">Features</a></li-->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="container">
+				<div class="row wrap">
+					<div class="col-md-12 gallery"> 
+							<div class="camera_wrap camera_white_skin" id="camera_wrap_1">
+								<div data-thumb="" data-src="images/slides/blank.gif">
+									<div class="img-responsive camera_caption fadeFromBottom">
+										<h2>Benvenuto :-)</h2>
+									</div>
+								</div>
+								<div data-thumb="" data-src="images/slides/blank.gif">
+									<div class="img-responsive camera_caption fadeFromBottom">
+										<h2>Goditi la tua casa!</h2>
+									</div>
+								</div>
+							</div><!-- #camera_wrap_1 -->
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 cBusiness">
+						<h3>Il modo migliore di vivere la casa</h3>
+						<h4>Livata IoT</h4>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 centPic">
+						<img class="img-responsive"  src="images/iot.png"/>
+					</div>
+					<div class="col-md-8 centPic">
+						<div class="row centPic2">
+							Il progetto Livata IoT è nato per sperimentare applicazioni reali sul mondo IoT
+							(Internet of Things), per chi non sa di cosa io stia parlando l'Internet delle cose 
+							è una possibile evoluzione dell'uso della rete: gli oggetti (le "cose" o sensori)
+							si rendono riconoscibili e acquisiscono intelligenza grazie al fatto di poter
+							comunicare dati su se stessi e accedere ad informazioni aggregate da parte di altri.
+							Sono stati utilizzati un Raspberry Pi 3 e degli ESP8266 ai quali sono stati
+							colleati i diversi sensori per la raccolta dei dati e per azionare i dispositivi.
+						</div>
+						<div class="row centPic">
+							<img src="images/raspberry.jpg"/>
+						</div>
+					</div>
+				</div>
+			</div>   
+	    </div>
+	    <!--Home end-->
+	    
+	    <!--Domotica start-->
+	    <!--Info toogles: http://www.bootstraptoggle.com-->
+	    <div id="domotica">
+	    	<div class="line2">
+				<div class="container">
+					<div class="row Fresh">
+						<div class="col-md-4 Des">
+							<i class="fa fa-heart"></i>
+							<h4>Fresh & Clean Design</h4>
+							<p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis justo adipiscing auctor ut auctor. feugiat </p>
+						</div>
+						<div class="col-md-4 Ver">
+							<i class="fa fa-cog"></i>
+							<h4>Very Flexible</h4>
+							<p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis justo adipiscing auctor ut auctor. feugiat </p>
+						</div>
+						<div class="col-md-4 Fully">
+							<i class="fa fa-tablet"></i>
+							<h4>Fully Responsive</h4>
+							<p>Nulla consectetur ornare nibh, a auctor mauris scelerisque eu proin nec urna quis justo adipiscing auctor ut auctor. feugiat </p>
+						</div>		
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wwa">
+						<span name="about" ></span>
+						<h3>Zona <i class="fa fa-sun-o"></i> Giorno</h3>
+						<h4>Attiva/Disattiva il disposito selezionando il pulsante corrispondente.</h4>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row team">
+					<div class="col-md-4 b1">
+						<i class="fa fa-cutlery fa-5x"></i>
+						<h4>Cucina</h4>
+						<div class="checkbox">
+						  <label>
+						  	<input checked type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
+						    Forno
+						  </label>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<i class="fa fa-television fa-5x"></i>
+						<h4>Sala</h4>
+						<div class="checkbox">
+						  <label>
+						  	<input type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
+						    Termoconvettore
+						  </label>
+						</div>
+					</div>
+					<div class="col-md-4 b3">
+						<i class="fa fa-shower fa-5x"></i>
+						<h4>Bagno</h4>
+						<div class="checkbox">
+						  <label>
+						  	<input checked type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
+						    Scaldabagno
+						  </label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 hr1">
+						<hr/>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 wwa">
+						<span name="about" ></span>
+						<h3>Zona <i class="fa fa-moon-o"></i> Notte</h3>
+						<h4>Attiva/Disattiva il disposito selezionando il pulsante corrispondente.</h4>
+					</div>
+				</div>
+			</div>		
+			<div class="container">
+				<div class="row team">
+					<div class="col-md-6 b1">
+						<i class="fa fa-bed fa-5x"></i>
+						<h4>Camera Letto</h4>
+						<div class="checkbox">
+						  <label>
+						  	<input checked type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
+						    Scaldaletto
+						  </label>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<i class="fa fa-shower fa-5x"></i>
+						<h4>Bagno</h4>
+						<div class="checkbox">
+						  <label>
+						  	<input type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
+						    Scaldino
+						  </label>
+						</div>
+					</div>
+				</div>
+			</div>
+	    </div>
+	    <!--Domotica end-->
+	    
+	    <!--Foto start-->    
+	    <div id=foto>    	
+			<div class="line3">
+				<div class="container">
+					<div id="project1" ></div>
+					<div class="row Ama">
+						<div class="col-md-12">
+						<span name="projects" id="projectss"></span>
+						<h3>FOTO</h3>
+						<p>
+							Le fotografie possono raggiungere l'eternità attraverso il momento.
+							<br>
+							<b>Henri Cartier-Bresson</b>
+						</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="container">
+				<div class="row">
+					<!-- filter_block -->
+					<div id="options" class="col-md-12" style="text-align: center;">
+						<ul id="filter" class="option-set" data-option-key="filter">
+							<li><a class="selected" href="#filter" data-option-value="*"
+								class="current">Tutte</a></li>
+							<li><a href="#filter" data-option-value=".estate">Estate</a></li>
+							<li><a href="#filter" data-option-value=".inverno">Inverno</a></li>
+							<li><a href="#filter" data-option-value=".weekend">Weekend</a></li>
+							<li><a href="#filter" data-option-value=".varie">Varie</a></li>
+						</ul>
+					</div>
+					<!-- //filter_block -->
+	
+					<div class="portfolio_block columns3   pretty"
+						data-animated="fadeIn">
+						<div class="element col-sm-4   gall inverno">
+							<a class="plS" href="images/prettyPhotoImages/pic1.jpg"
+								rel="prettyPhoto[gallery2]"> <img
+								class="img-responsive picsGall"
+								src="images/prettyPhotoImages/thumb_pic1.jpg" alt="Galleria foto" />
+							</a>
+							<div class="view project_descr ">
+								<h3>
+									<a href="#">Titolo Foto - Categoria</a>
+								</h3>
+								<ul>
+									<li><i class="fa fa-calendar"></i>gg-mm-aaaa</li>
+									<li><a class="heart" href="#"><i class="fa-user"></i>Nome Cognome</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="element col-sm-4  gall inverno">
+							<a class="plS" href="images/prettyPhotoImages/pic2.jpg"
+								rel="prettyPhoto[gallery2]"> <img
+								class="img-responsive picsGall"
+								src="images/prettyPhotoImages/thumb_pic2.jpg" alt="Galleria foto" />
+							</a>
+							<div class="view project_descr center">
+								<h3>
+									<a href="#">Titolo Foto - Categoria</a>
+								</h3>
+								<ul>
+									<li><i class="fa fa-calendar"></i>gg-mm-aaaa</li>
+									<li><a class="heart" href="#"><i class="fa-user"></i>Nome Cognome</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="element col-sm-4  gall weekend">
+							<a class="plS" href="images/prettyPhotoImages/pic3.jpg"
+								rel="prettyPhoto[gallery2]"> <img
+								class="img-responsive picsGall"
+								src="images/prettyPhotoImages/thumb_pic3.jpg" alt="Galleria foto" />
+							</a>
+							<div class="view project_descr ">
+								<h3>
+									<a href="#">Titolo Foto - Categoria</a>
+								</h3>
+								<ul>
+									<li><i class="fa fa-calendar"></i>gg-mm-aaaa</li>
+									<li><a class="heart" href="#"><i class="fa-user"></i>Nome Cognome</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="element col-sm-4  gall  varie">
+							<a class="plS" href="images/prettyPhotoImages/pic4.jpg"
+								rel="prettyPhoto[gallery2]"> <img
+								class="img-responsive picsGall"
+								src="images/prettyPhotoImages/thumb_pic4.jpg" alt="Galleria foto" />
+							</a>
+							<div class="view project_descr ">
+								<h3>
+									<a href="#">Titolo Foto - Categoria</a>
+								</h3>
+								<ul>
+									<li><i class="fa fa-calendar"></i>gg-mm-aaaa</li>
+									<li><a class="heart" href="#"><i class="fa-user"></i>Nome Cognome</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="element col-sm-4  gall  weekend">
+							<a class="plS" href="images/prettyPhotoImages/pic5.jpg"
+								rel="prettyPhoto[gallery2]"> <img
+								class="img-responsive picsGall"
+								src="images/prettyPhotoImages/thumb_pic5.jpg" alt="Galleria foto" />
+							</a>
+							<div class="view project_descr center">
+								<h3>
+									<a href="#">Titolo Foto - Categoria</a>
+								</h3>
+								<ul>
+									<li><i class="fa fa-calendar"></i>gg-mm-aaaa</li>
+									<li><a class="heart" href="#"><i class="fa-user"></i>Nome Cognome</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="element col-sm-4  gall  estate">
+							<a class="plS" href="images/prettyPhotoImages/pic6.jpg"
+								rel="prettyPhoto[gallery2]"> <img
+								class="img-responsive picsGall"
+								src="images/prettyPhotoImages/thumb_pic6.jpg" alt="Galleria foto" />
+							</a>
+							<div class="view project_descr ">
+								<h3>
+									<a href="#">Titolo Foto - Categoria</a>
+								</h3>
+								<ul>
+									<li><i class="fa fa-calendar"></i>gg-mm-aaaa</li>
+									<li><a class="heart" href="#"><i class="fa-user"></i>Nome Cognome</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="element col-sm-4 gall inverno">
+							<a class="plS" href="images/prettyPhotoImages/pic7.jpg"
+								rel="prettyPhoto[gallery2]"> <img
+								class="img-responsive picsGall"
+								src="images/prettyPhotoImages/thumb_pic7.jpg" alt="Galleria foto" />
+							</a>
+							<div class="view project_descr ">
+								<h3>
+									<a href="#">Titolo Foto - Categoria</a>
+								</h3>
+								<ul>
+									<li><i class="fa fa-calendar"></i>gg-mm-aaaa</li>
+									<li><a class="heart" href="#"><i class="fa-user"></i>Nome Cognome</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="element col-sm-4 gall varie">
+							<a class="plS" href="images/prettyPhotoImages/pic8.jpg"
+								rel="prettyPhoto[gallery2]"> <img
+								class="img-responsive picsGall"
+								src="images/prettyPhotoImages/thumb_pic8.jpg" alt="Galleria foto" />
+							</a>
+							<div class="view project_descr ">
+								<h3>
+									<a href="#">Titolo Foto - Categoria</a>
+								</h3>
+								<ul>
+									<li><i class="fa fa-calendar"></i>gg-mm-aaaa</li>
+									<li><a class="heart" href="#"><i class="fa-user"></i>Nome Cognome</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="element col-sm-4 gall estate">
+							<a class="plS" href="images/prettyPhotoImages/pic9.jpg"
+								rel="prettyPhoto[gallery2]"> <img
+								class="img-responsive picsGall"
+								src="images/prettyPhotoImages/thumb_pic9.jpg" alt="Galleria foto" />
+							</a>
+							<div class="view project_descr ">
+								<h3>
+									<a href="#">Titolo Foto - Categoria</a>
+								</h3>
+								<ul>
+									<li><i class="fa fa-calendar"></i>gg-mm-aaaa</li>
+									<li><a class="heart" href="#"><i class="fa-user"></i>Nome Cognome</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 cBtn  lb" style="text-align: center;">
+						<ul class="load_more_cont ">
+							<li class="dowbload btn_load_more">
+								<a href="javascript:void(0);"> <i class="fa fa-arrow-down"></i>Carica Altre foto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+	
+				<script type="text/javascript">
+					jQuery(window).load(function(){
+						items_set = [
+						
+							{category : 'inverno', lika_count : '77', view_count : '234', src : 'images/prettyPhotoImages/pic9.jpg', title : 'Foil Mini Badges', content : '' },
+							
+							{category : 'estate', lika_count : '45', view_count : '100', src : 'images/prettyPhotoImages/pic7.jpg', title : 'Darko – Business Card Mock Up', content : '' },
+							
+							{category : 'varie', lika_count : '22', view_count : '140', src : 'images/prettyPhotoImages/pic8.jpg', title : 'Woody Poster Text Effect', content : '' }
+							
+	
+						];
+						jQuery('.portfolio_block').portfolio_addon({
+							type : 1, // 2-4 columns simple portfolio
+							load_count : 3,
+							
+							items : items_set
+						});
+						$('#container').isotope({
+						  animationOptions: {
+							 duration: 900,
+							 queue: false
+						   }
+						});
+					});
+				</script>
+			</div>
+		</div>
+	    <!--Foto end-->
+	    
+	    <!--Film start-->
+	    <div id="film">
+			<div class="line4">
+				<div class="container">
+					<div class="row Ama">
+						<div class="col-md-12">
+							<h3>VIDEO</h3>
+							<p>
+								Il cinema è il modo più diretto di entrare in competizione con
+								Dio. <br> <b>Federico Fellini</b>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row news">
+					<!-- filter_block -->
+					<div id="options" class="col-md-12" style="text-align: center;">
+						<ul id="filter" class="option-set" data-option-key="filter">
+							<li><a class="selected" href="#filter" data-option-value="*" class="current">Tutti</a></li>
+							<li><a href="#filter" data-option-value=".animazione">Animazione</a></li>
+							<li><a href="#filter" data-option-value=".avventua">Avventura</a></li>
+							<li><a href="#filter" data-option-value=".commedia">Commedia</a></li>
+							<li><a href="#filter" data-option-value=".drammatico">Drammatico</a></li>
+							<li><a href="#filter" data-option-value=".fantascienza">Fantascienza</a></li>
+							<li><a href="#filter" data-option-value=".guerra">Guerra</a></li>
+							<li><a href="#filter" data-option-value=".horror">Horror</a></li>
+							<li><a href="#filter" data-option-value=".serie_tv">Serie TV</a></li>
+							<li><a href="#filter" data-option-value=".thriller">Thriller</a></li>
+						</ul>
+					</div>
+					<!-- //filter_block -->
+					
+					<div class="col-md-6  text-left">
+					<img class="img-responsive picsGall" src="images/picNews/news1.jpg"/>
+					<h3><a href="#">Titolo del film</a></h3>
+					<ul>
+						<li><i class="fa fa-calendar"></i>gg-mm-aaaa</li>
+						<li><a href="#"><i class="fa fa-folder-open"></i>Categoria</a></li>
+					</ul>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin eget mauris eget.</p>
+					<hr class="hrNews">
+					</div>
+					<div class="col-md-6 text-right">
+					<img class="img-responsive picsGall" src="images/picNews/news2.jpg"/>
+					<h3><a href="#">Titolo del film</a></h3>
+					<ul>
+						<li><i class="fa fa-calendar"></i>gg-mm-aaaa</li>
+						<li><a href="#"><i class="fa fa-folder-open"></i>Categoria</a></li>
+					</ul>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin eget mauris eget.</p>
+					<hr class="hrNews">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row news2 news">
+					<div class="col-md-6 text-left">
+					<img class="img-responsive picsGall" src="images/picNews/news3.jpg"/>
+					<h3><a href="#">Titolo del film</a></h3>
+					<ul>
+						<li><i class="fa fa-calendar"></i>gg-mm-aaaa</li>
+						<li><a href="#"><i class="fa fa-folder-open"></i>Categoria</a></li>
+					</ul>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin eget mauris eget.</p>
+					<hr class="hrNews">
+					</div>
+					<div class="col-md-6 text-right">
+					<img class="img-responsive picsGall" src="images/picNews/news4.jpg"/>
+					<h3><a href="#">Titolo del film</a></h3>
+					<ul>
+						<li><i class="fa fa-calendar"></i>gg-mm-aaaa</li>
+						<li><a href="#"><i class="fa fa-folder-open"></i>Categoria</a></li>
+					</ul>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin eget mauris eget.</p>
+					<hr class="hrNews">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row news2 news">
+					<div class="col-md-6 text-left">
+					<img class="img-responsive picsGall" src="images/picNews/news5.jpg"/>
+					<h3><a href="#">Titolo del film</a></h3>
+					<ul>
+						<li><i class="fa fa-calendar"></i>gg-mm-aaaa</li>
+						<li><a href="#"><i class="fa fa-folder-open"></i>Categoria</a></li>
+					</ul>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin eget mauris eget.</p>
+					<hr class="hrNews">
+					</div>
+					<div class="col-md-6 text-right">
+					<img class="img-responsive picsGall" src="images/picNews/news6.jpg"/>
+					<h3><a href="#">Titolo del film</a></h3>
+					<ul>
+						<li><i class="fa fa-calendar"></i>gg-mm-aaaa</li>
+						<li><a href="#"><i class="fa fa-folder-open"></i>Categoria</a></li>
+					</ul>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin eget mauris eget.</p>
+					<hr class="hrNews">
+					</div>
+				</div>
+			</div>	
+			<div class="container hideObj2" style="display:none;">
+				<div class="row news2 news">
+					<div class="col-md-6 text-right">
+					<img class="img-responsive picsGall" src="images/picNews/news6.jpg"/>
+					<h3><a href="#">Titolo del film</a></h3>
+					<ul>
+						<li><i class="fa fa-calendar"></i>gg-mm-aaaa</li>
+						<li><a href="#"><i class="fa fa-folder-open"></i>Categoria</a></li>
+					</ul>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin eget mauris eget.</p>
+					<hr class="hrNews">
+					</div>
+					<div class="col-md-6 text-left">
+					<img class="img-responsive picsGall" src="images/picNews/news5.jpg"/>
+					<h3><a href="#">Titolo del film</a></h3>
+					<ul>
+						<li><i class="fa fa-calendar"></i>gg-mm-aaaa</li>
+						<li><a href="#"><i class="fa fa-folder-open"></i>Categoria</a></li>
+					</ul>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit quisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. adipiscing vitae vel quam proin eget mauris eget. </p>
+					<hr class="hrNews">
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row cBtn">
+					<div class="col-md-12" style="text-align: center; margin-bottom: -90px; z-index: 10;">
+						<ul class="mNews">
+							<li class="dowbload bhide2"><a href="#"><i class="fa fa-arrow-down"></i>Carica altri video</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+	    </div>
+	    <!--Film end-->
+	    	
+		<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.slicknav.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".bhide").click(function(){
+					$(".hideObj").slideDown();
+					$(this).hide(); //.attr()
+					return false;
+				});
+				$(".bhide2").click(function(){
+					$(".container.hideObj2").slideDown();
+					$(this).hide(); // .attr()
+					return false;
+				});
+				$('.heart').mouseover(function(){
+					$(this).find('i').removeClass('fa-heart-o').addClass('fa-heart');
+				}).mouseout(function(){
+					$(this).find('i').removeClass('fa-heart').addClass('fa-heart-o');
+				});
+				
+				function sdf_FTS(_number,_decimal,_separator){
+					var decimal=(typeof(_decimal)!='undefined')?_decimal:2;
+					var separator=(typeof(_separator)!='undefined')?_separator:'';
+					var r=parseFloat(_number)
+					var exp10=Math.pow(10,decimal);
+					r=Math.round(r*exp10)/exp10;
+					rr=Number(r).toFixed(decimal).toString().split('.');
+					b=rr[0].replace(/(\d{1,3}(?=(\d{3})+(?:\.\d|\b)))/g,"\$1"+separator);
+					r=(rr[1]?b+'.'+rr[1]:b);
+					return r;
+				}
+				setTimeout(function(){
+					$('#counter').text('0');
+					$('#counter1').text('0');
+					$('#counter2').text('0');
+					setInterval(function(){
+						var curval=parseInt($('#counter').text());
+						var curval1=parseInt($('#counter1').text().replace(' ',''));
+						var curval2=parseInt($('#counter2').text());
+						if(curval<=707){
+							$('#counter').text(curval+1);
+						}
+						if(curval1<=12280){
+							$('#counter1').text(sdf_FTS((curval1+20),0,' '));
+						}
+						if(curval2<=245){
+							$('#counter2').text(curval2+1);
+						}
+					}, 2);
+				}, 500);
+			});
+		</script>
+		<script type="text/javascript">
+			jQuery(document).ready(function(){
+				jQuery('#menu').slicknav();	
+			});
+		</script>
+		
+		<script type="text/javascript">
+		    $(document).ready(function(){
+		        var $menu = $("#menuF");    
+		        $(window).scroll(function(){
+		            if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
+		                $menu.fadeOut('fast',function(){
+		                    $(this).removeClass("default")
+		                           .addClass("fixed transbg")
+		                           .fadeIn('fast');
+		                });
+		            } else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
+		                $menu.fadeOut('fast',function(){
+		                    $(this).removeClass("fixed transbg")
+		                           .addClass("default")
+		                           .fadeIn('fast');
+		                });
+		            }
+		        });
+			});
+		</script>
+		<script>
+			/*menu*/
+			function calculateScroll() {
+				var contentTop      =   [];
+				var contentBottom   =   [];
+				var winTop      =   $(window).scrollTop();
+				var rangeTop    =   200;
+				var rangeBottom =   500;
+				$('.navmenu').find('a').each(function(){
+					contentTop.push( $( $(this).attr('href') ).offset().top );
+					contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
+				})
+				$.each( contentTop, function(i){
+					if ( winTop > contentTop[i] - rangeTop && winTop < contentBottom[i] - rangeBottom ){
+						$('.navmenu li')
+						.removeClass('active')
+						.eq(i).addClass('active');				
+					}
+				})
+			};
+			$(document).ready(function(){
+				calculateScroll();
+				$(window).scroll(function(event) {
+					calculateScroll();
+				});
+				$('.navmenu ul li a').click(function() {  
+					$('html, body').animate({scrollTop: $(this.hash).offset().top - 80}, 800);
+					return false;
+				});
+			});		
+		</script>	
+		<script type="text/javascript" charset="utf-8">
+			jQuery(document).ready(function(){
+				jQuery(".pretty a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true, social_tools: ''});		
+			});
+		</script>
+	</body>
+</html>
