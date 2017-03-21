@@ -34,6 +34,31 @@ paths:
           description: Error
           schema:
             $ref: "#/definitions/ErrorResponse"
+  /status:
+    x-swagger-router-controller: device
+    put:
+      description: Update device status
+      operationId: putStatus
+      parameters:
+        - name: deviceName
+          in: query
+          description: The name of device
+          required: true
+          type: string
+        - name: deviceStatus
+          in: query
+          description: The device status value
+          required: true
+          type: integer
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/SuccessResponse"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
   /swagger:
     x-swagger-pipe: swagger_raw
 definitions:

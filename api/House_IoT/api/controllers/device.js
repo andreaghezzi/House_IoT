@@ -25,7 +25,8 @@ var util = require('util');
   we specify that in the exports of this module that 'hello' maps to the function named 'hello'
  */
 module.exports = {
-		getInfo: getInfo
+		getInfo: getInfo,
+		putStatus: putStatus
 };
 
 /*
@@ -42,4 +43,11 @@ function getInfo(req, res) {
 
   // this sends back a JSON response which is a single string
   res.json(deviceName);
+}
+
+function putStatus(req, res) {
+	var deviceName = req.swagger.params.deviceName.value || 'NOT DEFINED';
+	var deviceStatus = req.swagger.params.deviceStatus.value || 'NOT DEFINED';
+	
+	res.json(deviceStatus);
 }

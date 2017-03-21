@@ -158,7 +158,7 @@
 						<h4>Cucina</h4>
 						<div class="checkbox">
 						  <label>
-						  	<input checked type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
+						  	<input id="toggle-event-forno" type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
 						    Forno
 						  </label>
 						</div>
@@ -168,7 +168,7 @@
 						<h4>Sala</h4>
 						<div class="checkbox">
 						  <label>
-						  	<input type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
+						    <input id="toggle-event-termoconvettore" type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
 						    Termoconvettore
 						  </label>
 						</div>
@@ -178,7 +178,7 @@
 						<h4>Bagno</h4>
 						<div class="checkbox">
 						  <label>
-						  	<input checked type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
+						  	<input id="toggle-event-scaldabagno" type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
 						    Scaldabagno
 						  </label>
 						</div>
@@ -208,7 +208,7 @@
 						<h4>Camera Letto</h4>
 						<div class="checkbox">
 						  <label>
-						  	<input checked type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
+						  	<input id="toggle-event-scaldaletto" type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
 						    Scaldaletto
 						  </label>
 						</div>
@@ -218,7 +218,7 @@
 						<h4>Bagno</h4>
 						<div class="checkbox">
 						  <label>
-						  	<input type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
+						  	<input id="toggle-event-scaldino" type="checkbox" data-toggle="toggle" data-onstyle="success" data-offstyle="danger">
 						    Scaldino
 						  </label>
 						</div>
@@ -587,6 +587,78 @@
 			</div>
 	    </div>
 	    <!--Film end-->
+	    
+	    <!-- Toogle start -->
+		<script>
+		  $(function() {
+		    $('#toggle-event-forno').change(function() {
+		      if($(this).prop('checked')) {
+		    	alert("ON")
+		    	//Chiamo POST API e passo valore 1 per device forno
+		      } else {
+		    	  alert("OFF")
+		    	  //Chiamo POST API e passo valore 0 per device forno
+		      }
+		    })
+		  })
+		</script>
+		
+		<script>
+		  $(function() {
+		    $('#toggle-event-termoconvettore').change(function() {
+		      if($(this).prop('checked')) {
+		    	alert("ON")
+		    	//Chiamo POST API e passo valore 1 per device termoconvettore
+		      } else {
+		    	  alert("OFF")
+		    	  //Chiamo POST API e passo valore 0 per device termoconvettore
+		      }
+		    })
+		  })
+		</script>
+		
+		<script>
+		  $(function() {
+		    $('#toggle-event-scaldabagno').change(function() {
+		      if($(this).prop('checked')) {
+		    	alert("ON")
+		    	//Chiamo POST API e passo valore 1 per device termoconvettore
+		      } else {
+		    	  alert("OFF")
+		    	  //Chiamo POST API e passo valore 0 per device termoconvettore
+		      }
+		    })
+		  })
+		</script>
+		
+		<script>
+		  $(function() {
+		    $('#toggle-event-scaldaletto').change(function() {
+		      if($(this).prop('checked')) {
+		    	alert("ON")
+		    	//Chiamo POST API e passo valore 1 per device termoconvettore
+		      } else {
+		    	  alert("OFF")
+		    	  //Chiamo POST API e passo valore 0 per device termoconvettore
+		      }
+		    })
+		  })
+		</script>
+		
+		<script>
+		  $(function() {
+		    $('#toggle-event-scaldino').change(function() {
+		      if($(this).prop('checked')) {
+		    	alert("ON")
+		    	//Chiamo POST API e passo valore 1 per device termoconvettore
+		      } else {
+		    	  alert("OFF")
+		    	  //Chiamo POST API e passo valore 0 per device termoconvettore
+		      }
+		    })
+		  })
+		</script>
+	    <!-- Toogle end -->
 	    	
 		<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js"></script>
