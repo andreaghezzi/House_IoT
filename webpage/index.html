@@ -792,8 +792,20 @@
 		</script>	
 		<script type="text/javascript" charset="utf-8">
 			jQuery(document).ready(function(){
-				jQuery(".pretty a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true, social_tools: ''});		
+				jQuery(".pretty a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true, social_tools: ''});
 			});
+		</script>
+		<!-- This javascript code is executed on page load, get devices status and automatically set the toogle -->
+		<script type="text/javascript">
+			window.onload = function WindowLoad(event) {
+				//relay-forno
+				$.getJSON('http://127.0.0.1:10010/value?deviceName=relay_forno', function(data) {
+					if (data["value"] == 1)
+						$('#toggle-event-forno').bootstrapToggle('on');
+					else
+						$('#toggle-event-forno').bootstrapToggle('off');
+				});	
+			}
 		</script>
 	</body>
 </html>
