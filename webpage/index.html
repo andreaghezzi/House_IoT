@@ -592,12 +592,32 @@
 		<script>
 		  $(function() {
 		    $('#toggle-event-forno').change(function() {
-		      if($(this).prop('checked')) {
-		    	alert("ON")
-		    	//Chiamo POST API e passo valore 1 per device forno
-		      } else {
-		    	  alert("OFF")
-		    	  //Chiamo POST API e passo valore 0 per device forno
+		    	if($(this).prop('checked')) {
+		    		xhr = new XMLHttpRequest();
+		    		var url = "http://localhost:10010/value?deviceName=relay_forno";
+		    		xhr.open("PUT", url, true);
+		    		xhr.setRequestHeader("Content-type", "application/json");
+		    		xhr.onreadystatechange = function () { 
+		    		    if (xhr.readyState == 4 && xhr.status == 200) {
+		    		        var json = JSON.parse(xhr.responseText);
+		    		        console.log("Device value set to: "+json.value); //Visible on browser
+		    		    }
+		    		}
+		    		var data = JSON.stringify({"newValue": [{"value":1}]});
+		    		xhr.send(data);
+		      	} else {
+		      		xhr = new XMLHttpRequest();
+		    		var url = "http://localhost:10010/value?deviceName=relay_forno";
+		    		xhr.open("PUT", url, true);
+		    		xhr.setRequestHeader("Content-type", "application/json");
+		    		xhr.onreadystatechange = function () { 
+		    		    if (xhr.readyState == 4 && xhr.status == 200) {
+		    		        var json = JSON.parse(xhr.responseText);
+		    		        console.log("Device value set to: "+json.value); //Visible on browser
+		    		    }
+		    		}
+		    		var data = JSON.stringify({"newValue": [{"value":0}]});
+		    		xhr.send(data);
 		      }
 		    })
 		  })
@@ -608,10 +628,10 @@
 		    $('#toggle-event-termoconvettore').change(function() {
 		      if($(this).prop('checked')) {
 		    	alert("ON")
-		    	//Chiamo POST API e passo valore 1 per device termoconvettore
+		    	//Chiamo PUT API e passo valore 1 per device termoconvettore
 		      } else {
 		    	  alert("OFF")
-		    	  //Chiamo POST API e passo valore 0 per device termoconvettore
+		    	  //Chiamo PUT API e passo valore 0 per device termoconvettore
 		      }
 		    })
 		  })
@@ -622,10 +642,10 @@
 		    $('#toggle-event-scaldabagno').change(function() {
 		      if($(this).prop('checked')) {
 		    	alert("ON")
-		    	//Chiamo POST API e passo valore 1 per device termoconvettore
+		    	//Chiamo PUT API e passo valore 1 per device termoconvettore
 		      } else {
 		    	  alert("OFF")
-		    	  //Chiamo POST API e passo valore 0 per device termoconvettore
+		    	  //Chiamo PUT API e passo valore 0 per device termoconvettore
 		      }
 		    })
 		  })
@@ -636,10 +656,10 @@
 		    $('#toggle-event-scaldaletto').change(function() {
 		      if($(this).prop('checked')) {
 		    	alert("ON")
-		    	//Chiamo POST API e passo valore 1 per device termoconvettore
+		    	//Chiamo PUT API e passo valore 1 per device termoconvettore
 		      } else {
 		    	  alert("OFF")
-		    	  //Chiamo POST API e passo valore 0 per device termoconvettore
+		    	  //Chiamo PUT API e passo valore 0 per device termoconvettore
 		      }
 		    })
 		  })
@@ -650,10 +670,10 @@
 		    $('#toggle-event-scaldino').change(function() {
 		      if($(this).prop('checked')) {
 		    	alert("ON")
-		    	//Chiamo POST API e passo valore 1 per device termoconvettore
+		    	//Chiamo PUT API e passo valore 1 per device termoconvettore
 		      } else {
 		    	  alert("OFF")
-		    	  //Chiamo POST API e passo valore 0 per device termoconvettore
+		    	  //Chiamo PUT API e passo valore 0 per device termoconvettore
 		      }
 		    })
 		  })
