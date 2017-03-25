@@ -16,10 +16,9 @@ paths:
     x-swagger-router-controller: device
     get:
       description: Returns device status
-      # used as the method name of the controller
       operationId: getStatus
       tags:
-        - device
+        - Device
       parameters:
         - name: deviceName
           in: query
@@ -30,9 +29,33 @@ paths:
         "200":
           description: Success
           schema:
-            # a pointer to a definition
             $ref: "#/definitions/SuccessResponse"
-        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+    put:
+      operationId: putStatus
+      description: Updates device status value
+      tags:
+        - Device
+      parameters:
+        - name: deviceName
+          in: query
+          description: The name of the device
+          required: true
+          type: string
+        - name: newValue
+          description: This is the new status value
+          in: body
+          required: true
+          schema:
+            $ref: "#/definitions/newValue"
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/SuccessResponse"
         default:
           description: Error
           schema:
@@ -41,10 +64,9 @@ paths:
     x-swagger-router-controller: device
     get:
       description: Returns device value
-      # used as the method name of the controller
       operationId: getValue
       tags:
-        - device
+        - Device
       parameters:
         - name: deviceName
           in: query
@@ -55,9 +77,33 @@ paths:
         "200":
           description: Success
           schema:
-            # a pointer to a definition
             $ref: "#/definitions/SuccessResponse"
-        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+    put:
+      operationId: putValue
+      description: Updates device value
+      tags:
+        - Device
+      parameters:
+        - name: deviceName
+          in: query
+          description: The name of the device
+          required: true
+          type: string
+        - name: newValue
+          description: This is the new value
+          in: body
+          required: true
+          schema:
+            $ref: "#/definitions/newValue"
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/SuccessResponse"
         default:
           description: Error
           schema:
@@ -69,7 +115,7 @@ paths:
       # used as the method name of the controller
       operationId: getInfo
       tags:
-        - device
+        - Device
       parameters:
         - name: deviceName
           in: query
@@ -102,12 +148,6 @@ definitions:
       message:
         type: string
   Device:
-    required:
-      - name
-      - status
-      - value
-      - pin
-      - info
     properties:
       name:
         type: string
@@ -124,3 +164,8 @@ definitions:
       info:
         type: string
         description: This is the device description
+  newValue:
+    properties:
+      value:
+        type: integer
+        description: This is the new device status or new device value
