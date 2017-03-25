@@ -62,16 +62,65 @@ paths:
           description: Error
           schema:
             $ref: "#/definitions/ErrorResponse"
+  /info:
+    x-swagger-router-controller: device
+    get:
+      description: Returns all device info
+      # used as the method name of the controller
+      operationId: getInfo
+      tags:
+        - device
+      parameters:
+        - name: deviceName
+          in: query
+          description: The name of the device
+          required: true
+          type: string
+      responses:
+        "200":
+          description: Success
+          schema:
+            # a pointer to a definition
+            $ref: "#/definitions/Device"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
 definitions:
   SuccessResponse:
     required:
-      - message
+      - value
     properties:
-      message:
-        type: string
+      value:
+        type: integer
+        description: This is the response value, status or value of device
   ErrorResponse:
     required:
       - message
     properties:
       message:
         type: string
+  Device:
+    required:
+      - name
+      - status
+      - value
+      - pin
+      - info
+    properties:
+      name:
+        type: string
+        description: This is the device name
+      status:
+        type: integer
+        description: This is the device status (1 is active 0 is offline)
+      value:
+        type: integer
+        description: This is the device value (1 is on 0 is off)
+      pin:
+        type: integer
+        description: This is the pin of ESP8266 where the device is connect
+      info:
+        type: string
+        description: This is the device description
