@@ -594,7 +594,8 @@
 		    $('#toggle-event-forno').change(function() {
 		    	if($(this).prop('checked')) {
 		    		xhr = new XMLHttpRequest();
-		    		var url = "http://localhost:10010/value?deviceName=relay_forno";
+		    		//var url = "http://172.24.1.1:10010/value?deviceName=relay_forno";
+		    		var url = "http://localhost:10010/value?deviceName=relay_forno"; //On MAC localhost
 		    		xhr.open("PUT", url, true);
 		    		xhr.setRequestHeader("Content-type", "application/json");
 		    		xhr.onreadystatechange = function () { 
@@ -607,7 +608,8 @@
 		    		xhr.send(data);
 		      	} else {
 		      		xhr = new XMLHttpRequest();
-		    		var url = "http://localhost:10010/value?deviceName=relay_forno";
+		      		//var url = "http://172.24.1.1:10010/value?deviceName=relay_forno";
+		    		var url = "http://localhost:10010/value?deviceName=relay_forno"; //On MAC localhost
 		    		xhr.open("PUT", url, true);
 		    		xhr.setRequestHeader("Content-type", "application/json");
 		    		xhr.onreadystatechange = function () { 
@@ -799,7 +801,8 @@
 		<script type="text/javascript">
 			window.onload = function WindowLoad(event) {
 				//relay-forno
-				$.getJSON('http://127.0.0.1:10010/value?deviceName=relay_forno', function(data) {
+				//$.getJSON('http://172.24.1.1:10010/value?deviceName=relay_forno', function(data) {
+				$.getJSON('http://127.0.0.1:10010/value?deviceName=relay_forno', function(data) { //On MAC localhost
 					if (data["value"] == 1)
 						$('#toggle-event-forno').bootstrapToggle('on');
 					else

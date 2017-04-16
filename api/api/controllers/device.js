@@ -94,11 +94,12 @@ function getInfo(req, res) {
 function dbConnection() {
 	var mysql      = require('mysql');
 	connection = mysql.createConnection({
-	  host     : '127.0.0.1',
+	  host     : '127.0.0.1', //On MAC in localhost
+	  //host	: '172.24.1.1',
 	  user     : 'root',
 	  password : 'root',
 	  database : 'HouseIoT',
-	  socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'
+	  socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock' //On MAC localhost with MAMP
 	});
 
 	connection.connect();
